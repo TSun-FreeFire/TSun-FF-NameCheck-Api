@@ -1,3 +1,5 @@
 fastapi
 requests
 uvicorn
+flask
+gunicorn
