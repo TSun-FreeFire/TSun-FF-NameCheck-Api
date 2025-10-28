@@ -25,28 +25,33 @@ def check_player():
     config = REGION_CONFIG[region]
 
     cookies = {
-        '_ga': 'GA1.1.793566181.1761661630',  # These may need updating
+        '_ga': 'GA1.1.154369471.1761663434',  # These may need updating
         '_fbp': 'fb.1.1674510785537.363500115',
         '_ga_7JZFJ14B0B': 'GS1.1.1674510784.1.1.1674510789.0.0.0',
         'source': config['source'],
         'region': config['region_code'],
         'language': config['language'],
         '_ga_TVZ1LG7BEB': 'GS1.1.1674930050.3.1.1674930171.0.0.0',
-        'datadome': 'nx~_3zPJQaX7hYpl4ie7Km9METVya8eIRkc4lX~qC60HF~ljSpxXVAlkRQ~SHcoXz8M9Adc3Y7JG2mWuEcWvmpJwKW2d1DPiqdPCnM63sKd0UK0KFGXujFEIHrjc5CqJ',  
-        'session_key': 'n7lvwbavlrqfvbsj2t0ecm6ljb4cevv2',  
+        'datadome': '2YalnPtsSiqxvGI6QeZ4T30Y4Br8layFS5fbc9TQRAdTCgTxYljaKoFbJxAa4qwH~sUO3cZdnIrVSPUkoMUP9nCDfDBnPdow5b8EMuIcnwyqnHvIpKIIodtv3B2EbpLI',  
+        'session_key': '1b6mrforh4mfmveuzjnw6lbetntb0n3s',  
     }
 
     headers = {
+        'Accept': 'application/json, text/plain, */*',
+        'Accept-Encoding': 'gzip, deflate, br',
         'Accept-Language': 'en-US,en;q=0.9',
         'Connection': 'keep-alive',
+        'Content-Type': 'application/json',
+        'Host': 'shop2game.com',
         'Origin': 'https://shop2game.com',
         'Referer': 'https://shop2game.com/app/100067/idlogin',
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 11; Redmi Note 8)',
-        'accept': 'application/json',
-        'content-type': 'application/json',
+        'Sec-Fetch-Dest': 'empty',
+        'Sec-Fetch-Mode': 'cors',
+        'Sec-Fetch-Site': 'same-origin',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
         'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
-        'sec-ch-ua-mobile': '?1',
-        'sec-ch-ua-platform': '"Android"',
+        'sec-ch-ua-mobile': '?0',
+        'sec-ch-ua-platform': '"Windows"',
         'x-datadome-clientid': cookies['datadome'],  # Use the datadome from cookies
     }
 

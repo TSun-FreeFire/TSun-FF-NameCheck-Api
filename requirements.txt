@@ -3,3 +3,4 @@ requests
 uvicorn
 flask
 gunicorn
+beautifulsoup4
