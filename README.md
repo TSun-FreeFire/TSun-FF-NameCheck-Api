@@ -1,4 +1,3 @@
-```markdown
 # Free Fire NickName Checker API
 
 A Flask-based API for checking Free Fire player details, including nickname, region, ban status, and ban period, with multi-region support (PK, BD, IND, NA, SG).
@@ -8,9 +7,9 @@ A Flask-based API for checking Free Fire player details, including nickname, reg
 Clone the repository and install dependencies:
 
 ```
-**git clone <your-repo-url>**
-**cd <your-repo-directory>**
-**pip install flask requests**
+git clone TSun-FreeFire/TSun-FF-NameCheck-Api.git
+cd TSun-FF-NameCheck-Api
+pip install flask requests
 ```
 
 ## Usage
@@ -18,13 +17,12 @@ Clone the repository and install dependencies:
 Run the app locally:
 
 ```
-**python app.py**
+python app.py
 ```
 
-Access the endpoint: `http://yourlink/check?uid=<player_uid>&region=<region_code>`
+Access the endpoint: `http://yourlink/check?uid={uid}&region={pk}`
 
 Example response:
-```
 ```
 {
   "success": true,
@@ -55,4 +53,3 @@ Fork the repo, create a branch, and submit a pull request[2].
 ## License
 
 MIT License[2].
-```
