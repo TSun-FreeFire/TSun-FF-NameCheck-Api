@@ -25,15 +25,15 @@ def check_player():
     config = REGION_CONFIG[region]
 
     cookies = {
-        '_ga': 'GA1.1.2123120599.1674510784',  # These may need updating
+        '_ga': 'GA1.1.139075504.1761660128',  # These may need updating
         '_fbp': 'fb.1.1674510785537.363500115',
         '_ga_7JZFJ14B0B': 'GS1.1.1674510784.1.1.1674510789.0.0.0',
         'source': config['source'],
         'region': config['region_code'],
         'language': config['language'],
         '_ga_TVZ1LG7BEB': 'GS1.1.1674930050.3.1.1674930171.0.0.0',
-        'datadome': 'dwmXRYbYVRJ_~3wAO391r2DN8uuE4xaccnCE5mQWNzIH44kTjuIILIiU~Feu2T0GOja2bWz7N1HBSoHBNuxI6qmCFINCnDaDbGwARIqU3rA4Bw1SFU3A4QqRbo9IG~CQ',  
-        'session_key': '17vjcs4zandqkldoajoz25k0t5fult1j',  
+        'datadome': 'mufxkZpuhwX4xu31fozH8Jc8fee5HKVgM8w4lLblhgBy21FeGrYbmMiY_hQ0ew7vSg2RogHh~lksYxANoiEVqvtEVAg0csrmIY1w01gbm8EaGAVxnsiv0rxA3zTWPYbA',  
+        'session_key': '6nau7ozh8mqztuy2pd7xnptah15lb0lj',  
     }
 
     headers = {
