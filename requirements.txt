@@ -1,6 +1,2 @@
-fastapi
+Flask
 requests
-uvicorn
-flask
-gunicorn
-beautifulsoup4

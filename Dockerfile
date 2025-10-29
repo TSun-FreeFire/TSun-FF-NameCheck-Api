@@ -13,10 +13,10 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy your app code
-COPY api.py .
+COPY app.py .
 
 # Expose port
 EXPOSE 5000
 
 # Start the Flask app
-CMD ["python", "api.py"]
+CMD ["python", "app.py"]
