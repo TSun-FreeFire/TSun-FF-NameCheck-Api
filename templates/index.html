@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSun Ban Check</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <header>
+                <h1>Ban Check</h1>
+                <p class="subtitle">Enter UID to check account status</p>
+            </header>
+
+            <div class="input-group">
+                <input type="text" id="uidInput" placeholder="Enter Player UID..." autocomplete="off">
+            </div>
+
+            <button id="checkBtn">Check Status</button>
+
+            <div class="loader" id="loader">
+                <div class="spinner"></div>
+            </div>
+
+            <div class="error-message" id="errorMessage"></div>
+
+            <div class="result-container" id="resultContainer">
+                <div class="info-item">
+                    <span class="label">Nickname</span>
+                    <span class="value" id="nickname">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Region</span>
+                    <span class="value" id="region">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Level</span>
+                    <span class="value" id="level">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Status</span>
+                    <span class="value status-badge" id="statusBadge">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Last Login</span>
+                    <span class="value" id="lastLogin">-</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

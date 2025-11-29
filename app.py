@@ -1,12 +1,16 @@
-from flask import Flask, request, Response
+from flask import Flask, request, Response, render_template
 import requests
 import json
 import datetime
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
 def get_combined_data(uid, ban_key="saeed"):
-    namecheck_url = f"https://ffinfo.tsunstudio.pw/get?uid={uid}"
+    namecheck_url = f"https://fffinfo.tsunstudio.pw/get?uid={uid}"
     bancheck_url = f"https://bancheckbackend.tsunstudio.pw/bancheck?key={ban_key}&uid={uid}"
 
     namecheck_response = requests.get(namecheck_url)
