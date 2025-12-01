@@ -5,16 +5,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const loader = document.getElementById('loader');
     const errorMessage = document.getElementById('errorMessage');
 
-    checkBtn.addEventListener('click', performCheck);
-    uidInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-            performCheck();
-        }
-    });
+    if (checkBtn) {
+        checkBtn.addEventListener('click', performCheck);
+        uidInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                performCheck();
+            }
+        });
+    }
 
     async function performCheck() {
         const uid = uidInput.value.trim();
-        
+
         if (!uid) {
             showError('Please enter a valid UID');
             return;
@@ -49,11 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('region').textContent = data.region || 'N/A';
         document.getElementById('level').textContent = data.AccountLevel || 'N/A';
         document.getElementById('lastLogin').textContent = data.Last_Login || 'N/A';
-        
+
         // Status Badge
         const statusBadge = document.getElementById('statusBadge');
         const isBanned = data.is_banned;
-        
+
         if (isBanned) {
             statusBadge.textContent = 'BANNED';
             statusBadge.className = 'value status-badge status-banned';
@@ -73,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function showError(msg) {
         errorMessage.textContent = msg;
         errorMessage.style.display = 'block';
-        
+
         // Shake animation for input
         uidInput.style.animation = 'shake 0.5s';
         setTimeout(() => {

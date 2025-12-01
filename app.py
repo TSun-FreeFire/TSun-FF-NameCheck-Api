@@ -9,6 +9,12 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/docs')
+def docs():
+    return render_template('docs.html')
+
+
+
 def get_combined_data(uid, ban_key="saeed"):
     namecheck_url = f"https://fffinfo.tsunstudio.pw/get?uid={uid}"
     bancheck_url = f"https://bancheckbackend.tsunstudio.pw/bancheck?key={ban_key}&uid={uid}"
