@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&section=header&text=FreeFire%20BanCheck%20API&fontSize=45&fontAlignY=35&animation=twinkling&fontColor=fff"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&section=header&text=FreeFire%20BanCheck&fontSize=45&fontAlignY=35&animation=twinkling&fontColor=fff"/>
 </div>
 
 <div align="center">
