@@ -17,7 +17,7 @@
 ## ⚡ Overview
 </div>
 
-**FreeFire BanCheck API** is a lightweight Flask-based REST API that Show Free Fire player information with ban status.
+**FreeFire BanCheck Frontend** its a frontend of a lightweight Flask-based REST API that Show Free Fire player information with ban status.
 
 > 🧠 Designed for speed, precision, and integration with custom dashboards or moderation tools.
 
@@ -82,7 +82,7 @@ GET https://yourlink.com/bancheck?uid=2513698016
 </div>
 
 ```bash
-git clone https://github.com/saeedx302/TSun-FF-Bancheck.git
+git clone https://github.com/TSun-FreeFire/TSun-FF-Bancheck.git
 cd TSun-FF-Bancheck
 ```
 ```bash
@@ -93,7 +93,7 @@ python app.py
 The Local server runs on:
 
 ```
-http://127.0.0.1:5000/bancheck?uid=YOUR_UID
+http://127.0.0.1:5000/
 ```
 
 ---
